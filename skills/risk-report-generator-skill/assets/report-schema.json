@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FinprobeRiskReport",
+  "type": "object",
+  "required": ["reportId", "company", "generatedAt", "question", "overallRiskLevel", "summary", "findings", "openQuestions", "evidenceRefs"],
+  "properties": {
+    "reportId": {"type": "string", "description": "报告编号，格式 RPT-YYYYMMDD-XXX"},
+    "company": {"type": "string", "description": "默认 启衡精密制造有限公司"},
+    "generatedAt": {"type": "string", "description": "ISO-8601 时间"},
+    "question": {"type": "string", "description": "用户原问题"},
+    "overallRiskLevel": {"type": "string", "enum": ["高风险", "中风险", "低风险", "证据不足"]},
+    "summary": {"type": "string", "description": "不超过 8 句的结论摘要"},
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["riskType", "riskLevel", "subject", "facts", "rootCause", "mitigation", "recommendation"],
+        "properties": {
+          "riskType": {"type": "string", "description": "八类风险名称之一"},
+          "riskLevel": {"type": "string", "enum": ["高风险", "中风险", "低风险", "证据不足"]},
+          "subject": {
+            "type": "object",
+            "description": "调查对象，至少含 supplierId/poId/invoiceId/paymentId 之一",
+            "properties": {
+              "supplierId": {"type": ["string", "null"]},
+              "poId": {"type": ["string", "null"]},
+              "grId": {"type": ["string", "null"]},
+              "invoiceId": {"type": ["string", "null"]},
+              "paymentId": {"type": ["string", "null"]}
+            }
+          },
+          "facts": {"type": "array", "items": {"type": "string"}, "description": "已核实事实，需含单据 ID 与关键数字"},
+          "rootCause": {"type": "string", "description": "根因机制，不能只复述差异"},
+          "mitigation": {"type": "string", "description": "消解情况的自然语言"},
+          "recommendation": {"type": "string", "description": "处置建议"}
+        }
+      }
+    },
+    "openQuestions": {"type": "array", "items": {"type": "string"}, "description": "待确认问题，无则空数组"},
+    "evidenceRefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tool", "id"],
+        "properties": {
+          "tool": {"type": "string"},
+          "id": {"type": "string"}
+        }
+      }
+    }
+  },
+  "example": {
+    "reportId": "RPT-20260520-001",
+    "company": "启衡精密制造有限公司",
+    "generatedAt": "2026-05-20T10:00:00+08:00",
+    "question": "PO-01332 三单是否匹配？",
+    "overallRiskLevel": "高风险",
+    "summary": "PO-01332 入库 62、开票 100，构成少货多付高风险。",
+    "findings": [
+      {
+        "riskType": "少货多付 / 数量/金额异常",
+        "riskLevel": "高风险",
+        "subject": {"supplierId": "VEN-0069", "poId": "PO-01332", "grId": "GR-000289", "invoiceId": "INV-004349"},
+        "facts": ["GR 实收 62，发票数量 100"],
+        "rootCause": "短收仍按订单全额开票且无补货审批",
+        "mitigation": "ERP 未检索到分批收货或补货协议审批，风险未消解",
+        "recommendation": "暂停付款并要求补货或红字发票"
+      }
+    ],
+    "openQuestions": [],
+    "evidenceRefs": [{"tool": "gr-query", "id": "GR-000289"}]
+  }
+}

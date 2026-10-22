@@ -1,0 +1,123 @@
+{
+  "errorCodes": [
+    "VALIDATION",
+    "NOT_FOUND",
+    "CONFLICT",
+    "ERP_UNAVAILABLE",
+    "LLM_ERROR",
+    "EVIDENCE_BLOCKED",
+    "CANCELLED"
+  ],
+  "httpStatusByCode": {
+    "VALIDATION": 400,
+    "NOT_FOUND": 404,
+    "CONFLICT": 409,
+    "ERP_UNAVAILABLE": 503,
+    "LLM_ERROR": 500,
+    "EVIDENCE_BLOCKED": 409,
+    "CANCELLED": 409
+  },
+  "investigationStatus": [
+    "created",
+    "routing",
+    "locating",
+    "running",
+    "awaiting_user",
+    "reviewing",
+    "follow_up",
+    "reporting",
+    "completed",
+    "failed",
+    "cancelled"
+  ],
+  "terminalStatus": [
+    "completed",
+    "failed",
+    "cancelled"
+  ],
+  "mode": [
+    "clarify",
+    "policy_qa",
+    "lookup",
+    "single",
+    "cross"
+  ],
+  "scope": [
+    "policy",
+    "lookup",
+    "document",
+    "supplier",
+    "population"
+  ],
+  "agents": [
+    "LeadAgent",
+    "SupplierRiskAgent",
+    "TransactionRiskAgent",
+    "PaymentRiskAgent",
+    "GeneralQueryAgent",
+    "EvidenceReviewAgent",
+    "ReportAgent"
+  ],
+  "skills": [
+    "supplier-profile-audit-skill",
+    "supplier-relation-audit-skill",
+    "p2p-three-way-match-skill",
+    "split-order-audit-skill",
+    "payment-audit-skill",
+    "payee-account-security-skill",
+    "internal-policy-qa-skill",
+    "general-query-skill",
+    "evidence-validation-skill",
+    "risk-report-generator-skill"
+  ],
+  "mcpTools": [
+    "vendor-query",
+    "po-query",
+    "gr-query",
+    "invoice-query",
+    "payment-query",
+    "approval-query",
+    "policy-query",
+    "financial-analysis",
+    "artifact-get"
+  ],
+  "riskTypes": [
+    "供应商主信息异常",
+    "供应商之间关联关系风险",
+    "少货多付 / 数量/金额异常",
+    "拆单避审",
+    "重复发票",
+    "税率异常",
+    "重复付款",
+    "异常收款账户"
+  ],
+  "riskLevels": [
+    "高风险",
+    "中风险",
+    "低风险",
+    "证据不足"
+  ],
+  "approvalStatus": [
+    "COMPLETED",
+    "PENDING",
+    "REJECTED",
+    "NOT_FOUND",
+    "NOT_QUERIED"
+  ],
+  "eventTypes": [
+    "status.changed",
+    "route.decided",
+    "agent.started",
+    "agent.thought",
+    "agent.completed",
+    "tool.started",
+    "tool.completed",
+    "envelope.upserted",
+    "evidence.completed",
+    "report.completed",
+    "message.assistant",
+    "message.clarify",
+    "heartbeat",
+    "error"
+  ]
+}

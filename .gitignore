@@ -1,0 +1,43 @@
+# secrets
+.env
+.env.local
+.env.*.local
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+finprobe_env/
+.pytest_cache/
+*.egg-info/
+
+# node
+node_modules/
+dist/
+src/frontend/dist/
+
+# runtime artifacts
+.tmp/
+.codex/
+.agents/
+
+# local scratch / logs
+*.log
+pytest-out.txt
+tmp-tsc.log
+routes.txt
+tsc-out.txt
+vite-out.txt
+src/frontend/tsc-out.txt
+src/frontend/vite-out.txt
+_write_agents.py
+evals/scripts/_w.py
+evals/traces/
+
+# product narrative, not part of the public repo
+/项目规划.md
+
+# os
+.DS_Store
+Thumbs.db

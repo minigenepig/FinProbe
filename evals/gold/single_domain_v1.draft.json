@@ -1,0 +1,956 @@
+{
+  "datasetId": "finprobe-single-domain-v1",
+  "split": "single",
+  "description": "10个单域评测题：8个单据/供应商调查 + 1个全量关联排查 + 1个制度问答。主体不一定是供应商。",
+  "reviewerDecisions": {
+    "status": "pending_human_review",
+    "method": "MCP tools.dispatch -> mock-erp HTTP; did not read mock-erp/data/*.json as evidence source",
+    "decisions": [
+      "八类风险名称与阈值以 SKILL.md 为准；重复付款无中风险。",
+      "拆单必检仅保留两笔及以上均贴近红线(>=450000且<500000)的聚类：VEN-0104高、VEN-0037中。另外6个“一张近红线+一张较小PO”的5日窗不作为拆单必检，避免把计划补货打成化整为零。",
+      "税率：PO与发票税率一致、仅与category默认税率不同的34张发票，不作为税率异常必检。例外：VEN-S001 有经营范围审批明确要求更新税率分类但category仍为SERVICE，按技能中风险口径标注。",
+      "关联：全库仅 VEN-0095/VEN-0123 共享电话。名称含腾跃/正泰/润泽等只有字面相似，不作为必检。该对按技能示例标中风险（重复建档），不因各自大额PO升为高风险。",
+      "VEN-0056 三张 poId 为空的PO（poNo=null-849/850/851）标证据不足，不标高风险。",
+      "PO-01615 规则层为中风险，因 APP-GR-01615-202505 COMPLETED 消解为低风险。",
+      "全部GR仓库WH-01-A、收货人EMP-3392，不得作为拆单证据。",
+      "不改 VEN-S001 既有三单。主数据name是供应商VEN-S001有限公司，审批标题使用宁波恒远物流。"
+    ]
+  },
+  "cases": [
+    {
+      "caseId": "SINGLE-TW-HIGH-PO-01332",
+      "split": "single",
+      "input": {
+        "question": "PO-01332 三单是否匹配？请给出风险类型、等级和必要证据。"
+      },
+      "subject": {
+        "poId": "PO-01332",
+        "grId": "GR-000289",
+        "invoiceId": "INV-004349",
+        "supplierId": "VEN-0069"
+      },
+      "expectedRoute": {
+        "mode": "single",
+        "scope": "document",
+        "agents": [
+          "TransactionRiskAgent"
+        ],
+        "skills": [
+          "p2p-three-way-match-skill"
+        ],
+        "reviewRequired": false
+      },
+      "expectedFindings": [
+        {
+          "domain": "交易域",
+          "agent": "TransactionRiskAgent",
+          "skill": "p2p-three-way-match-skill",
+          "riskType": "少货多付 / 数量/金额异常",
+          "riskLevel": "高风险",
+          "mustDetect": true,
+          "facts": [
+            "PO-01332 / GR-000289 / INV-004349：GR实收62，发票数量100，相对入库数量差61.29%（差38件）",
+            "超开金额77690.85元",
+            "approval-query(businessId=PO-01332, keyword=补货) 未检索到审批"
+          ],
+          "metrics": {
+            "poQty": 100,
+            "grQty": 62,
+            "invoiceQty": 100,
+            "qtyDiff": 38,
+            "qtyDiffPct": 61.29,
+            "overAmount": 77690.85,
+            "poUnitPrice": 1809.28,
+            "invoiceUnitPrice": 1809.28
+          },
+          "rootCause": "短收仍按订单全额开票，且无补货或分批收货审批",
+          "keyEvidence": [
+            {
+              "tool": "po-query",
+              "id": "PO-01332"
+            },
+            {
+              "tool": "gr-query",
+              "id": "GR-000289"
+            },
+            {
+              "tool": "invoice-query",
+              "id": "INV-004349"
+            }
+          ],
+          "requiredTools": [
+            "po-query",
+            "gr-query",
+            "invoice-query",
+            "approval-query"
+          ],
+          "subject": {
+            "poId": "PO-01332",
+            "grId": "GR-000289",
+            "invoiceId": "INV-004349",
+            "supplierId": "VEN-0069"
+          },
+          "source": "tagged_case_list",
+          "approvalStatus": "NOT_FOUND",
+          "recommendation": "暂停付款，要求补货或开具红字发票后再匹配",
+          "openQuestions": []
+        }
+      ],
+      "expectedOverallRiskLevel": "高风险",
+      "status": "pending_human_review",
+      "source": "mcp_investigation_draft",
+      "expectedBackgroundLowRisk": [],
+      "scoring": {
+        "mustDetect": [
+          {
+            "riskType": "少货多付 / 数量/金额异常",
+            "riskLevel": "高风险"
+          }
+        ]
+      }
+    },
+    {
+      "caseId": "SINGLE-TW-MID-PO-01489",
+      "split": "single",
+      "input": {
+        "question": "PO-01489 短收超开是否构成少货多付？请给出风险类型、等级和必要证据。"
+      },
+      "subject": {
+        "poId": "PO-01489",
+        "grId": "GR-000327",
+        "invoiceId": "INV-004506",
+        "supplierId": "VEN-0033"
+      },
+      "expectedRoute": {
+        "mode": "single",
+        "scope": "document",
+        "agents": [
+          "TransactionRiskAgent"
+        ],
+        "skills": [
+          "p2p-three-way-match-skill"
+        ],
+        "reviewRequired": false
+      },
+      "expectedFindings": [
+        {
+          "domain": "交易域",
+          "agent": "TransactionRiskAgent",
+          "skill": "p2p-three-way-match-skill",
+          "riskType": "少货多付 / 数量/金额异常",
+          "riskLevel": "中风险",
+          "mustDetect": true,
+          "facts": [
+            "PO-01489 / GR-000327 / INV-004506：GR实收96，发票数量100，数量差4.17%，超开3012.06元",
+            "ERP未检索到补货/分批审批"
+          ],
+          "metrics": {
+            "poQty": 100,
+            "grQty": 96,
+            "invoiceQty": 100,
+            "qtyDiff": 4,
+            "qtyDiffPct": 4.17,
+            "overAmount": 3012.06
+          },
+          "rootCause": "短收小幅超开，无完整补货审批",
+          "keyEvidence": [
+            {
+              "tool": "po-query",
+              "id": "PO-01489"
+            },
+            {
+              "tool": "gr-query",
+              "id": "GR-000327"
+            },
+            {
+              "tool": "invoice-query",
+              "id": "INV-004506"
+            }
+          ],
+          "requiredTools": [
+            "po-query",
+            "gr-query",
+            "invoice-query",
+            "approval-query"
+          ],
+          "subject": {
+            "poId": "PO-01489",
+            "grId": "GR-000327",
+            "invoiceId": "INV-004506",
+            "supplierId": "VEN-0033"
+          },
+          "source": "tagged_case_list",
+          "approvalStatus": "NOT_FOUND",
+          "recommendation": "要求补货或红字发票后再匹配",
+          "openQuestions": []
+        }
+      ],
+      "expectedOverallRiskLevel": "中风险",
+      "status": "pending_human_review",
+      "source": "mcp_investigation_draft",
+      "expectedBackgroundLowRisk": [],
+      "scoring": {
+        "mustDetect": [
+          {
+            "riskType": "少货多付 / 数量/金额异常",
+            "riskLevel": "中风险"
+          }
+        ]
+      }
+    },
+    {
+      "caseId": "SINGLE-TW-INSUFF-PO-04009",
+      "split": "single",
+      "input": {
+        "question": "PO-04009 能不能付款？三单是否已经闭环？请给出风险类型、等级和必要证据。"
+      },
+      "subject": {
+        "poId": "PO-04009",
+        "invoiceId": "INV-007009",
+        "supplierId": "VEN-0053"
+      },
+      "expectedRoute": {
+        "mode": "single",
+        "scope": "document",
+        "agents": [
+          "TransactionRiskAgent"
+        ],
+        "skills": [
+          "p2p-three-way-match-skill"
+        ],
+        "reviewRequired": false
+      },
+      "expectedFindings": [
+        {
+          "domain": "交易域",
+          "agent": "TransactionRiskAgent",
+          "skill": "p2p-three-way-match-skill",
+          "riskType": "少货多付 / 数量/金额异常",
+          "riskLevel": "证据不足",
+          "mustDetect": true,
+          "facts": [
+            "PO-04009 有发票 INV-007009（价税合计90400.00），gr-query(poId=PO-04009) totalCount=0",
+            "不得把缺入库单直接当成少货多付违规"
+          ],
+          "metrics": {
+            "poQty": 100,
+            "grQty": null,
+            "invoiceQty": 100,
+            "missing": [
+              "GR"
+            ]
+          },
+          "rootCause": "缺GR，三单无法闭环",
+          "keyEvidence": [
+            {
+              "tool": "po-query",
+              "id": "PO-04009"
+            },
+            {
+              "tool": "invoice-query",
+              "id": "INV-007009"
+            }
+          ],
+          "requiredTools": [
+            "po-query",
+            "gr-query",
+            "invoice-query"
+          ],
+          "subject": {
+            "poId": "PO-04009",
+            "invoiceId": "INV-007009",
+            "supplierId": "VEN-0053"
+          },
+          "source": "tagged_case_list",
+          "approvalStatus": "NOT_QUERIED",
+          "recommendation": "补齐入库后再判断是否少货多付",
+          "openQuestions": []
+        }
+      ],
+      "expectedOverallRiskLevel": "证据不足",
+      "status": "pending_human_review",
+      "source": "mcp_investigation_draft",
+      "expectedBackgroundLowRisk": [],
+      "scoring": {
+        "mustDetect": [
+          {
+            "riskType": "少货多付 / 数量/金额异常",
+            "riskLevel": "证据不足"
+          }
+        ]
+      }
+    },
+    {
+      "caseId": "SINGLE-SPLIT-HIGH-VEN-0104",
+      "split": "single",
+      "input": {
+        "question": "常州广盛金属材料股份有限公司（VEN-0104）最近是不是在拆单规避大额审批？"
+      },
+      "subject": {
+        "supplierId": "VEN-0104"
+      },
+      "expectedRoute": {
+        "mode": "single",
+        "scope": "supplier",
+        "agents": [
+          "TransactionRiskAgent"
+        ],
+        "skills": [
+          "split-order-audit-skill"
+        ],
+        "reviewRequired": false
+      },
+      "expectedFindings": [
+        {
+          "domain": "交易域",
+          "agent": "TransactionRiskAgent",
+          "skill": "split-order-audit-skill",
+          "riskType": "拆单避审",
+          "riskLevel": "高风险",
+          "mustDetect": true,
+          "facts": [
+            "PO-04001/PO-04002/PO-04003 于2026-04-18至2026-04-21连续下达",
+            "物料均为ITEM-0104，金额498895/496974/499460元，均低于500000红线，合计1495329元",
+            "approval-query(businessId=PO-04001) totalCount=0，ERP未检索到大额加签或独立项目说明"
+          ],
+          "metrics": {
+            "windowDays": 3,
+            "poIds": [
+              "PO-04001",
+              "PO-04002",
+              "PO-04003"
+            ],
+            "amounts": [
+              498895.0,
+              496974.0,
+              499460.0
+            ],
+            "amountSum": 1495329.0,
+            "itemCodes": [
+              "ITEM-0104"
+            ],
+            "nearThreshold": true,
+            "allBelowThreshold": true,
+            "distinctProjects": []
+          },
+          "rootCause": "同一需求被拆成三笔刚好低于大额加签红线的订单，未见独立项目说明",
+          "keyEvidence": [
+            {
+              "tool": "po-query",
+              "id": "PO-04001"
+            },
+            {
+              "tool": "po-query",
+              "id": "PO-04002"
+            },
+            {
+              "tool": "po-query",
+              "id": "PO-04003"
+            }
+          ],
+          "requiredTools": [
+            "po-query",
+            "approval-query"
+          ],
+          "subject": {
+            "supplierId": "VEN-0104",
+            "poId": "PO-04001"
+          },
+          "source": "tagged_case_list",
+          "approvalStatus": "NOT_FOUND",
+          "recommendation": "按合并金额补履行大额采购加签，并评估是否暂停后续付款",
+          "openQuestions": []
+        }
+      ],
+      "expectedOverallRiskLevel": "高风险",
+      "status": "pending_human_review",
+      "source": "mcp_investigation_draft",
+      "expectedBackgroundLowRisk": [],
+      "scoring": {
+        "mustDetect": [
+          {
+            "riskType": "拆单避审",
+            "riskLevel": "高风险"
+          }
+        ]
+      }
+    },
+    {
+      "caseId": "SINGLE-SPLIT-MID-VEN-0037",
+      "split": "single",
+      "input": {
+        "question": "VEN-0037 这几笔近红线订单是不是故意拆单？请给出风险类型、等级和必要证据。"
+      },
+      "subject": {
+        "supplierId": "VEN-0037"
+      },
+      "expectedRoute": {
+        "mode": "single",
+        "scope": "supplier",
+        "agents": [
+          "TransactionRiskAgent"
+        ],
+        "skills": [
+          "split-order-audit-skill"
+        ],
+        "reviewRequired": false
+      },
+      "expectedFindings": [
+        {
+          "domain": "交易域",
+          "agent": "TransactionRiskAgent",
+          "skill": "split-order-audit-skill",
+          "riskType": "拆单避审",
+          "riskLevel": "中风险",
+          "mustDetect": true,
+          "facts": [
+            "PO-04004/PO-04005/PO-04006 于2026-04-14至2026-04-16下达，物料均为ITEM-0037",
+            "金额484950/471700/466400元，均低于500000红线，合计1423050元",
+            "审批APP-PO-04004-202604(厂务部一号车间年度维保)、APP-PO-04005-202604(IT部办公区弱电改造)、APP-PO-04006-202604(行政部宿舍区空调检修)均为COMPLETED"
+          ],
+          "metrics": {
+            "windowDays": 2,
+            "poIds": [
+              "PO-04004",
+              "PO-04005",
+              "PO-04006"
+            ],
+            "amounts": [
+              484950.0,
+              471700.0,
+              466400.0
+            ],
+            "amountSum": 1423050.0,
+            "itemCodes": [
+              "ITEM-0037"
+            ],
+            "nearThreshold": true,
+            "allBelowThreshold": true,
+            "distinctProjects": [
+              "厂务部一号车间年度维保项目",
+              "IT部办公区弱电改造项目",
+              "行政部宿舍区空调检修项目"
+            ]
+          },
+          "rootCause": "相近时间多笔近红线订单，但审批写明不同项目/需求部门，属合理分单关注项",
+          "keyEvidence": [
+            {
+              "tool": "po-query",
+              "id": "PO-04004"
+            },
+            {
+              "tool": "po-query",
+              "id": "PO-04005"
+            },
+            {
+              "tool": "po-query",
+              "id": "PO-04006"
+            },
+            {
+              "tool": "approval-query",
+              "id": "APP-PO-04004-202604"
+            },
+            {
+              "tool": "approval-query",
+              "id": "APP-PO-04005-202604"
+            },
+            {
+              "tool": "approval-query",
+              "id": "APP-PO-04006-202604"
+            }
+          ],
+          "requiredTools": [
+            "po-query",
+            "approval-query"
+          ],
+          "subject": {
+            "supplierId": "VEN-0037",
+            "poId": "PO-04004"
+          },
+          "source": "tagged_case_list",
+          "approvalStatus": "COMPLETED",
+          "recommendation": "关注汇总金额，不必按故意拆单升级",
+          "openQuestions": []
+        }
+      ],
+      "expectedOverallRiskLevel": "中风险",
+      "status": "pending_human_review",
+      "source": "mcp_investigation_draft",
+      "expectedBackgroundLowRisk": [],
+      "scoring": {
+        "mustDetect": [
+          {
+            "riskType": "拆单避审",
+            "riskLevel": "中风险"
+          }
+        ]
+      }
+    },
+    {
+      "caseId": "SINGLE-DUPPAY-HIGH-INV-004207",
+      "split": "single",
+      "input": {
+        "question": "INV-004207 是不是付了两次？请给出风险类型、等级和必要证据。"
+      },
+      "subject": {
+        "invoiceId": "INV-004207",
+        "poId": "PO-01190",
+        "supplierId": "VEN-0118"
+      },
+      "expectedRoute": {
+        "mode": "single",
+        "scope": "document",
+        "agents": [
+          "PaymentRiskAgent"
+        ],
+        "skills": [
+          "payment-audit-skill"
+        ],
+        "reviewRequired": false
+      },
+      "expectedFindings": [
+        {
+          "domain": "付款域",
+          "agent": "PaymentRiskAgent",
+          "skill": "payment-audit-skill",
+          "riskType": "重复付款",
+          "riskLevel": "高风险",
+          "mustDetect": true,
+          "facts": [
+            "INV-004207 / PO-01190 对应 PAY-00265 与 PAY-00895，两笔均为PAID，金额均为134662.09",
+            "发票总额134662.09，已付合计269324.18，超额134662.09",
+            "ERP未检索到重复付款拦截"
+          ],
+          "metrics": {
+            "invoiceTotal": 134662.09,
+            "paymentIds": [
+              "PAY-00265",
+              "PAY-00895"
+            ],
+            "paidCount": 2,
+            "paidSum": 269324.18,
+            "excessAmount": 134662.09,
+            "intercepted": false
+          },
+          "rootCause": "同一发票全额被成功支付两次，系统未拦截重复提交",
+          "keyEvidence": [
+            {
+              "tool": "invoice-query",
+              "id": "INV-004207"
+            },
+            {
+              "tool": "payment-query",
+              "id": "PAY-00265"
+            },
+            {
+              "tool": "payment-query",
+              "id": "PAY-00895"
+            },
+            {
+              "tool": "po-query",
+              "id": "PO-01190"
+            }
+          ],
+          "requiredTools": [
+            "payment-query",
+            "invoice-query",
+            "approval-query"
+          ],
+          "subject": {
+            "invoiceId": "INV-004207",
+            "poId": "PO-01190",
+            "supplierId": "VEN-0118"
+          },
+          "source": "tagged_case_list",
+          "approvalStatus": "NOT_FOUND",
+          "recommendation": "立即冻结后续付款并启动重复付款追回",
+          "openQuestions": []
+        }
+      ],
+      "expectedOverallRiskLevel": "高风险",
+      "status": "pending_human_review",
+      "source": "mcp_investigation_draft",
+      "expectedBackgroundLowRisk": [],
+      "scoring": {
+        "mustDetect": [
+          {
+            "riskType": "重复付款",
+            "riskLevel": "高风险"
+          }
+        ]
+      }
+    },
+    {
+      "caseId": "SINGLE-PAYEE-HIGH-PAY-00345",
+      "split": "single",
+      "input": {
+        "question": "PAY-00345 收款账户正不正常？请给出风险类型、等级和必要证据。"
+      },
+      "subject": {
+        "paymentId": "PAY-00345",
+        "invoiceId": "INV-004584",
+        "poId": "PO-01567",
+        "supplierId": "VEN-0021"
+      },
+      "expectedRoute": {
+        "mode": "single",
+        "scope": "document",
+        "agents": [
+          "PaymentRiskAgent"
+        ],
+        "skills": [
+          "payee-account-security-skill"
+        ],
+        "reviewRequired": false
+      },
+      "expectedFindings": [
+        {
+          "domain": "付款域",
+          "agent": "PaymentRiskAgent",
+          "skill": "payee-account-security-skill",
+          "riskType": "异常收款账户",
+          "riskLevel": "高风险",
+          "mustDetect": true,
+          "facts": [
+            "PAY-00345 已 PAID，收款人陈晓东，账号6226091234567890123",
+            "VEN-0021 深圳腾跃不锈钢制品有限公司 登记账号0256471647897085460",
+            "approval-query(businessId=VEN-0021, keyword=银行账户) totalCount=0"
+          ],
+          "metrics": {
+            "vendorAccountNo": "0256471647897085460",
+            "vendorName": "深圳腾跃不锈钢制品有限公司",
+            "payeeAccountNo": "6226091234567890123",
+            "payeeName": "陈晓东",
+            "accountMatch": false,
+            "nameMatch": false,
+            "payeeType": "个人",
+            "paymentStatus": "PAID",
+            "paymentAmount": 118060.8
+          },
+          "rootCause": "货款打入第三方个人账户，属于资金红线，ERP未检索到银行账户变更申请",
+          "keyEvidence": [
+            {
+              "tool": "payment-query",
+              "id": "PAY-00345"
+            },
+            {
+              "tool": "invoice-query",
+              "id": "INV-004584"
+            },
+            {
+              "tool": "po-query",
+              "id": "PO-01567"
+            },
+            {
+              "tool": "vendor-query",
+              "id": "VEN-0021"
+            }
+          ],
+          "requiredTools": [
+            "payment-query",
+            "vendor-query",
+            "approval-query"
+          ],
+          "subject": {
+            "paymentId": "PAY-00345",
+            "invoiceId": "INV-004584",
+            "poId": "PO-01567",
+            "supplierId": "VEN-0021"
+          },
+          "source": "tagged_case_list",
+          "approvalStatus": "NOT_FOUND",
+          "recommendation": "立即止付/追回，并核查出纳与供应商联系人是否内外勾结",
+          "openQuestions": []
+        }
+      ],
+      "expectedOverallRiskLevel": "高风险",
+      "status": "pending_human_review",
+      "source": "mcp_investigation_draft",
+      "expectedBackgroundLowRisk": [],
+      "scoring": {
+        "mustDetect": [
+          {
+            "riskType": "异常收款账户",
+            "riskLevel": "高风险"
+          }
+        ]
+      }
+    },
+    {
+      "caseId": "SINGLE-PAYEE-MID-PAY-00353",
+      "split": "single",
+      "input": {
+        "question": "PAY-00353 账户变更还没批完是不是已经付款了？请给出风险类型、等级和必要证据。"
+      },
+      "subject": {
+        "paymentId": "PAY-00353",
+        "invoiceId": "INV-004624",
+        "poId": "PO-01607",
+        "supplierId": "VEN-0044"
+      },
+      "expectedRoute": {
+        "mode": "single",
+        "scope": "document",
+        "agents": [
+          "PaymentRiskAgent"
+        ],
+        "skills": [
+          "payee-account-security-skill"
+        ],
+        "reviewRequired": false
+      },
+      "expectedFindings": [
+        {
+          "domain": "付款域",
+          "agent": "PaymentRiskAgent",
+          "skill": "payee-account-security-skill",
+          "riskType": "异常收款账户",
+          "riskLevel": "中风险",
+          "mustDetect": true,
+          "facts": [
+            "PAY-00353 已 PAID，收款账号7558120099887766554，户名仍为佛山仁和供应链管理股份有限公司",
+            "主数据登记账号5054980504038742359",
+            "变更审批 APP-VEN-0044-BANK-202507 仍 PENDING 时已付款"
+          ],
+          "metrics": {
+            "vendorAccountNo": "5054980504038742359",
+            "vendorName": "佛山仁和供应链管理股份有限公司",
+            "payeeAccountNo": "7558120099887766554",
+            "payeeName": "佛山仁和供应链管理股份有限公司",
+            "accountMatch": false,
+            "nameMatch": true,
+            "payeeType": "供应商本人",
+            "paymentStatus": "PAID",
+            "paymentAmount": 122810.8
+          },
+          "rootCause": "账户变更申请仍为PENDING即发起付款，资金已划转",
+          "keyEvidence": [
+            {
+              "tool": "payment-query",
+              "id": "PAY-00353"
+            },
+            {
+              "tool": "invoice-query",
+              "id": "INV-004624"
+            },
+            {
+              "tool": "po-query",
+              "id": "PO-01607"
+            },
+            {
+              "tool": "vendor-query",
+              "id": "VEN-0044"
+            },
+            {
+              "tool": "approval-query",
+              "id": "APP-VEN-0044-BANK-202507"
+            }
+          ],
+          "requiredTools": [
+            "payment-query",
+            "vendor-query",
+            "approval-query"
+          ],
+          "subject": {
+            "paymentId": "PAY-00353",
+            "invoiceId": "INV-004624",
+            "poId": "PO-01607",
+            "supplierId": "VEN-0044"
+          },
+          "source": "tagged_case_list",
+          "approvalStatus": "PENDING",
+          "recommendation": "暂停后续付款，等待财务总监审批闭环后再核对账号",
+          "openQuestions": []
+        }
+      ],
+      "expectedOverallRiskLevel": "中风险",
+      "status": "pending_human_review",
+      "source": "mcp_investigation_draft",
+      "expectedBackgroundLowRisk": [],
+      "scoring": {
+        "mustDetect": [
+          {
+            "riskType": "异常收款账户",
+            "riskLevel": "中风险"
+          }
+        ]
+      }
+    },
+    {
+      "caseId": "SINGLE-REL-PHONE",
+      "split": "single",
+      "input": {
+        "question": "供应商里有没有共用电话或重复建档？请给出风险类型、等级和必要证据。"
+      },
+      "subject": {
+        "supplierId": null,
+        "relatedSupplierIds": [
+          "VEN-0095",
+          "VEN-0123"
+        ]
+      },
+      "expectedRoute": {
+        "mode": "single",
+        "scope": "population",
+        "agents": [
+          "SupplierRiskAgent"
+        ],
+        "skills": [
+          "supplier-relation-audit-skill"
+        ],
+        "reviewRequired": false
+      },
+      "expectedFindings": [
+        {
+          "domain": "供应商域",
+          "agent": "SupplierRiskAgent",
+          "skill": "supplier-relation-audit-skill",
+          "riskType": "供应商之间关联关系风险",
+          "riskLevel": "中风险",
+          "mustDetect": true,
+          "facts": [
+            "VEN-0095 南通润泽设备维护有限责任公司 与 VEN-0123 润泽设备维护 共用 contactPhone=17090604194、contactName=陆玉",
+            "两者 taxNo/bankAccount 不同，物料分别为 ITEM-0095 与 ITEM-0123，无相同 itemCode 交叉接单",
+            "PO金额分别为6899213.95与6537789.98，approval-query(keyword=关联) totalCount=0"
+          ],
+          "metrics": {
+            "keyType": "contactPhone",
+            "keyValue": "17090604194",
+            "relatedSupplierIds": [
+              "VEN-0095",
+              "VEN-0123"
+            ],
+            "poOverlap": false,
+            "relatedPoAmountSum": 13437003.93,
+            "declarationFound": false,
+            "itemCodes": [
+              "ITEM-0095",
+              "ITEM-0123"
+            ]
+          },
+          "rootCause": "历史简称与全称分别建档并共享联系人电话，更像主数据重复建档而非串标；Gold按技能示例口径标中风险，不因各自大额PO单独升为高风险",
+          "keyEvidence": [
+            {
+              "tool": "vendor-query",
+              "id": "VEN-0095"
+            },
+            {
+              "tool": "vendor-query",
+              "id": "VEN-0123"
+            },
+            {
+              "tool": "po-query",
+              "id": "VEN-0095"
+            },
+            {
+              "tool": "po-query",
+              "id": "VEN-0123"
+            }
+          ],
+          "requiredTools": [
+            "vendor-query",
+            "po-query",
+            "financial-analysis",
+            "approval-query"
+          ],
+          "subject": {
+            "supplierId": null
+          },
+          "source": "mcp_investigation_draft",
+          "approvalStatus": "NOT_FOUND",
+          "recommendation": "合并 VEN-0123 至 VEN-0095 有效档案，并补做关联关系备案",
+          "openQuestions": [
+            "两家是否曾交叉承接同一项目"
+          ]
+        }
+      ],
+      "expectedOverallRiskLevel": "中风险",
+      "status": "pending_human_review",
+      "source": "mcp_investigation_draft",
+      "expectedBackgroundLowRisk": [],
+      "scoring": {
+        "mustDetect": [
+          {
+            "riskType": "供应商之间关联关系风险",
+            "riskLevel": "中风险"
+          }
+        ]
+      }
+    },
+    {
+      "caseId": "SINGLE-POLICY-TRAVEL",
+      "split": "single",
+      "input": {
+        "question": "帮我查一下公司内部报销制度关于差旅费的标准是什么。"
+      },
+      "subject": {},
+      "expectedRoute": {
+        "mode": "policy_qa",
+        "scope": "policy",
+        "agents": [
+          "GeneralQueryAgent"
+        ],
+        "skills": [
+          "internal-policy-qa-skill"
+        ],
+        "reviewRequired": false
+      },
+      "expectedIntent": "policy_qa",
+      "expectedFindings": [],
+      "expectedOverallRiskLevel": null,
+      "expectedAnswer": {
+        "skill": "internal-policy-qa-skill",
+        "notCovered": false,
+        "handoff": null,
+        "requiredTools": [
+          "policy-query"
+        ],
+        "citations": [
+          {
+            "docId": "差旅与报销管理制度",
+            "title": "差旅与报销管理制度",
+            "version": "V1.2",
+            "effectiveDate": "2025-01-01",
+            "article": "第二条",
+            "quote": "北京、上海、广州、深圳：500 元/晚；省会及计划单列市：400 元/晚；其他城市：350 元/晚。"
+          },
+          {
+            "docId": "差旅与报销管理制度",
+            "title": "差旅与报销管理制度",
+            "version": "V1.2",
+            "effectiveDate": "2025-01-01",
+            "article": "第三条",
+            "quote": "国内优先高铁/动车二等座；航班仅限经济舱。出租车/网约车仅用于机场、车站接驳或无公共交通场景，单日上限 150 元。"
+          },
+          {
+            "docId": "差旅与报销管理制度",
+            "title": "差旅与报销管理制度",
+            "version": "V1.2",
+            "effectiveDate": "2025-01-01",
+            "article": "第四条",
+            "quote": "一线城市 150 元/天；其他城市 100 元/天。出发和返回当天按半天计。"
+          }
+        ],
+        "mustNot": [
+          "给出高风险/中风险/低风险作为最终风控结论",
+          "把差旅报销派给 PaymentRiskAgent",
+          "引用已废止的供应商管理办法V1.0"
+        ]
+      },
+      "status": "pending_human_review",
+      "source": "mcp_investigation_draft",
+      "expectedBackgroundLowRisk": [],
+      "scoring": {
+        "mustDetect": []
+      }
+    }
+  ],
+  "version": "v1.draft",
+  "status": "pending_human_review",
+  "goldFrozen": false,
+  "protocol": "AGENTS.md",
+  "company": "启衡精密制造有限公司",
+  "generatedAt": "2026-10-21T15:06:24Z",
+  "investigationTrace": "evals/traces/raw_analysis.json",
+  "mcpQueryTrace": "evals/traces/mcp_queries.json"
+}

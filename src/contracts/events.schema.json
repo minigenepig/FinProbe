@@ -1,0 +1,31 @@
+{
+  "$id": "https://finprobe.local/contracts/events.schema.json",
+  "title": "InvestigationEvent",
+  "type": "object",
+  "required": ["seq", "type", "ts", "payload"],
+  "additionalProperties": false,
+  "properties": {
+    "seq": { "type": "integer", "minimum": 1 },
+    "type": {
+      "type": "string",
+      "enum": [
+        "status.changed",
+        "route.decided",
+        "agent.started",
+        "agent.completed",
+        "tool.started",
+        "tool.completed",
+        "envelope.upserted",
+        "evidence.completed",
+        "report.completed",
+        "message.assistant",
+        "message.clarify",
+        "heartbeat",
+        "error"
+      ]
+    },
+    "ts": { "type": "string" },
+    "payload": { "type": "object" }
+  },
+  "description": "heartbeat 的 seq 可为 0 且不落库。tool.completed.payload 不得包含发票/PO 全量数组。"
+}

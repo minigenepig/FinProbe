@@ -1,0 +1,5990 @@
+{
+  "data": [
+    {
+      "approvalId": "APP-VEN-S001-202512",
+      "businessType": "Other",
+      "businessId": "VEN-S001",
+      "workflowTitle": "宁波恒远物流供应商档案及业务范围变更审批",
+      "initiator": "EMP-PROC-01",
+      "initiatorId": "EMP-PROC-01",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-12-20T09:30:00.000Z",
+      "submitComment": "宁波恒远物流申请新增业务范围：金属材料转售。经营许可证已更新，附营业执照变更扫描件。请求更新供应商档案分类。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "采购部主管审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "已核验营业执照变更文件，经营范围确已扩展为道路运输服务及金属材料批发转售。采购部审批通过，请财务部相应更新供应商档案税率分类，并通知供应商后续开具金属材料发票时适用13%税率。",
+          "approvalTime": "2025-12-28T14:15:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-GR-01615-202505",
+      "businessType": "PO",
+      "businessId": "PO-01615",
+      "workflowTitle": "分批收货及补货协议审批",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-05-03T01:10:00.000Z",
+      "submitComment": "成都鑫源不锈钢本次交货92件，剩余8件供应商承诺于2025-05-20前补齐。申请按分批收货处理，发票按订单全额开具，待补货入库后关闭订单。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "采购部主管审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "同意分批收货，补货协议已归档，差异8件不作为超开处理。",
+          "approvalTime": "2025-05-03T03:20:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "财务经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "有完整补货协议，允许按订单全额挂账，补货入库后关闭。",
+          "approvalTime": "2025-05-03T07:40:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-04004-202604",
+      "businessType": "PO",
+      "businessId": "PO-04004",
+      "workflowTitle": "厂务部独立项目采购说明审批",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-04-14T02:00:00.000Z",
+      "submitComment": "本订单对应厂务部【一号车间年度维保项目】的独立需求，请审核拆分下达原因。金额未达大额采购红线。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "厂务部独立预算，维保窗口必须在4月中旬完成，与其他部门需求无关。",
+          "approvalTime": "2026-04-14T05:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购部主管审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "已核实为厂务部独立项目需求，物料虽同属设备维护类，但项目预算与验收主体不同，同意分单下达。",
+          "approvalTime": "2026-04-14T08:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-04005-202604",
+      "businessType": "PO",
+      "businessId": "PO-04005",
+      "workflowTitle": "IT部独立项目采购说明审批",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-04-15T02:00:00.000Z",
+      "submitComment": "本订单对应IT部【办公区弱电改造项目】的独立需求，请审核拆分下达原因。金额未达大额采购红线。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "IT部弱电改造专项，需求来源与厂务维保不同，项目编号IT-2026-041。",
+          "approvalTime": "2026-04-15T05:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购部主管审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "已核实为IT部独立项目需求，物料虽同属设备维护类，但项目预算与验收主体不同，同意分单下达。",
+          "approvalTime": "2026-04-15T08:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-04006-202604",
+      "businessType": "PO",
+      "businessId": "PO-04006",
+      "workflowTitle": "行政部独立项目采购说明审批",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-04-16T02:00:00.000Z",
+      "submitComment": "本订单对应行政部【宿舍区空调检修项目】的独立需求，请审核拆分下达原因。金额未达大额采购红线。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "行政部宿舍后勤项目，承包界面与车间维保、弱电改造均独立。",
+          "approvalTime": "2026-04-16T05:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购部主管审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "已核实为行政部独立项目需求，物料虽同属设备维护类，但项目预算与验收主体不同，同意分单下达。",
+          "approvalTime": "2026-04-16T08:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-VEN-0044-BANK-202507",
+      "businessType": "Other",
+      "businessId": "VEN-0044",
+      "workflowTitle": "供应商银行账户变更申请",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-07-08T01:20:00.000Z",
+      "submitComment": "佛山仁和供应链管理股份有限公司申请将收款账户由工商银行变更为招商银行佛山分行，账号7558120099887766554。变更材料已附，请审核。因账期到期拟同步发起付款。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "采购部主管审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "变更申请材料齐全，同意转财务总监审核。",
+          "approvalTime": "2025-07-08T06:10:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": null,
+          "comment": "待审批"
+        }
+      ],
+      "approvalStatus": "PENDING"
+    },
+    {
+      "approvalId": "APP-PAY-DUP-01220",
+      "businessType": "PAYMENT",
+      "businessId": "PAY-00896",
+      "workflowTitle": "重复付款拦截审批",
+      "initiator": "EMP-8821",
+      "initiatorId": "EMP-8821",
+      "initiatorName": "出纳岗",
+      "submittedAt": "2025-04-24T02:00:00.000Z",
+      "submitComment": "系统提示该发票已存在成功付款，提交重复付款申请请审核。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "财务经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "REJECT",
+          "comment": "发票INV-004237已完成付款，重复支付申请予以拒绝并拦截。",
+          "approvalTime": "2025-04-24T06:30:00.000Z"
+        }
+      ],
+      "approvalStatus": "REJECTED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00006",
+      "businessType": "PO",
+      "businessId": "PO-00006",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-07-31T01:30:00.000Z",
+      "submitComment": "订单PO-00006价税合计1151055.72元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-07-31T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-07-31T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-07-31T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00018",
+      "businessType": "PO",
+      "businessId": "PO-00018",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-07-29T01:30:00.000Z",
+      "submitComment": "订单PO-00018价税合计994137.97元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-07-29T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-07-29T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-07-29T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00027",
+      "businessType": "PO",
+      "businessId": "PO-00027",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-07-28T01:30:00.000Z",
+      "submitComment": "订单PO-00027价税合计787158.12元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-07-28T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-07-28T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-07-28T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00050",
+      "businessType": "PO",
+      "businessId": "PO-00050",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-08-06T01:30:00.000Z",
+      "submitComment": "订单PO-00050价税合计576825.13元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-08-06T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-08-06T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-08-06T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00088",
+      "businessType": "PO",
+      "businessId": "PO-00088",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-07-14T01:30:00.000Z",
+      "submitComment": "订单PO-00088价税合计651017.29元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-07-14T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-07-14T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-07-14T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00100",
+      "businessType": "PO",
+      "businessId": "PO-00100",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-07-17T01:30:00.000Z",
+      "submitComment": "订单PO-00100价税合计1082307.38元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-07-17T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-07-17T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-07-17T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00102",
+      "businessType": "PO",
+      "businessId": "PO-00102",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-07-15T01:30:00.000Z",
+      "submitComment": "订单PO-00102价税合计773699.44元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-07-15T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-07-15T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-07-15T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00149",
+      "businessType": "PO",
+      "businessId": "PO-00149",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-07-31T01:30:00.000Z",
+      "submitComment": "订单PO-00149价税合计590030.28元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-07-31T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-07-31T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-07-31T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00171",
+      "businessType": "PO",
+      "businessId": "PO-00171",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-08-22T01:30:00.000Z",
+      "submitComment": "订单PO-00171价税合计832829.47元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-08-22T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-08-22T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-08-22T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00344",
+      "businessType": "PO",
+      "businessId": "PO-00344",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-09-03T01:30:00.000Z",
+      "submitComment": "订单PO-00344价税合计642608.43元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-09-03T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-09-03T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-09-03T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00369",
+      "businessType": "PO",
+      "businessId": "PO-00369",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-09-30T01:30:00.000Z",
+      "submitComment": "订单PO-00369价税合计999835.08元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-09-30T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-09-30T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-09-30T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00438",
+      "businessType": "PO",
+      "businessId": "PO-00438",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-10-12T01:30:00.000Z",
+      "submitComment": "订单PO-00438价税合计618376.08元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-10-12T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-10-12T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-10-12T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00460",
+      "businessType": "PO",
+      "businessId": "PO-00460",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-10-07T01:30:00.000Z",
+      "submitComment": "订单PO-00460价税合计563046.00元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-10-07T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-10-07T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-10-07T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00600",
+      "businessType": "PO",
+      "businessId": "PO-00600",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-10-15T01:30:00.000Z",
+      "submitComment": "订单PO-00600价税合计647216.03元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-10-15T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-10-15T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-10-15T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00604",
+      "businessType": "PO",
+      "businessId": "PO-00604",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-10-21T01:30:00.000Z",
+      "submitComment": "订单PO-00604价税合计518801.69元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-10-21T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-10-21T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-10-21T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00613",
+      "businessType": "PO",
+      "businessId": "PO-00613",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-11-04T01:30:00.000Z",
+      "submitComment": "订单PO-00613价税合计504389.52元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-11-04T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-11-04T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-11-04T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00614",
+      "businessType": "PO",
+      "businessId": "PO-00614",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-11-18T01:30:00.000Z",
+      "submitComment": "订单PO-00614价税合计511565.80元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-11-18T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-11-18T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-11-18T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00627",
+      "businessType": "PO",
+      "businessId": "PO-00627",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-11-04T01:30:00.000Z",
+      "submitComment": "订单PO-00627价税合计553348.19元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-11-04T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-11-04T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-11-04T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00630",
+      "businessType": "PO",
+      "businessId": "PO-00630",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-10-22T01:30:00.000Z",
+      "submitComment": "订单PO-00630价税合计561767.24元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-10-22T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-10-22T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-10-22T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00636",
+      "businessType": "PO",
+      "businessId": "PO-00636",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-10-18T01:30:00.000Z",
+      "submitComment": "订单PO-00636价税合计833019.32元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-10-18T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-10-18T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-10-18T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00645",
+      "businessType": "PO",
+      "businessId": "PO-00645",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-10-24T01:30:00.000Z",
+      "submitComment": "订单PO-00645价税合计515930.50元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-10-24T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-10-24T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-10-24T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00672",
+      "businessType": "PO",
+      "businessId": "PO-00672",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-10-22T01:30:00.000Z",
+      "submitComment": "订单PO-00672价税合计632124.84元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-10-22T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-10-22T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-10-22T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00700",
+      "businessType": "PO",
+      "businessId": "PO-00700",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-12-02T01:30:00.000Z",
+      "submitComment": "订单PO-00700价税合计1091555.96元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-12-02T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-12-02T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-12-02T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00706",
+      "businessType": "PO",
+      "businessId": "PO-00706",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-11-27T01:30:00.000Z",
+      "submitComment": "订单PO-00706价税合计500081.21元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-11-27T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-11-27T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-11-27T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00733",
+      "businessType": "PO",
+      "businessId": "PO-00733",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-12-19T01:30:00.000Z",
+      "submitComment": "订单PO-00733价税合计548203.74元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-12-19T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-12-19T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-12-19T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00749",
+      "businessType": "PO",
+      "businessId": "PO-00749",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-11-10T01:30:00.000Z",
+      "submitComment": "订单PO-00749价税合计1523608.03元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-11-10T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-11-10T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-11-10T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00765",
+      "businessType": "PO",
+      "businessId": "PO-00765",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-11-19T01:30:00.000Z",
+      "submitComment": "订单PO-00765价税合计999761.71元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-11-19T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-11-19T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-11-19T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00796",
+      "businessType": "PO",
+      "businessId": "PO-00796",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-12-13T01:30:00.000Z",
+      "submitComment": "订单PO-00796价税合计506917.01元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-12-13T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-12-13T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-12-13T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00835",
+      "businessType": "PO",
+      "businessId": "PO-00835",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-12-09T01:30:00.000Z",
+      "submitComment": "订单PO-00835价税合计1284224.15元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-12-09T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-12-09T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-12-09T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00866",
+      "businessType": "PO",
+      "businessId": "PO-00866",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-12-18T01:30:00.000Z",
+      "submitComment": "订单PO-00866价税合计876855.15元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-12-18T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-12-18T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-12-18T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00901",
+      "businessType": "PO",
+      "businessId": "PO-00901",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2024-12-21T01:30:00.000Z",
+      "submitComment": "订单PO-00901价税合计556024.69元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2024-12-21T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2024-12-21T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2024-12-21T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00903",
+      "businessType": "PO",
+      "businessId": "PO-00903",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-01-13T01:30:00.000Z",
+      "submitComment": "订单PO-00903价税合计660144.08元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-01-13T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-01-13T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-01-13T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00953",
+      "businessType": "PO",
+      "businessId": "PO-00953",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-01-19T01:30:00.000Z",
+      "submitComment": "订单PO-00953价税合计590359.61元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-01-19T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-01-19T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-01-19T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00972",
+      "businessType": "PO",
+      "businessId": "PO-00972",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-01-09T01:30:00.000Z",
+      "submitComment": "订单PO-00972价税合计1079219.92元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-01-09T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-01-09T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-01-09T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00983",
+      "businessType": "PO",
+      "businessId": "PO-00983",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-01-28T01:30:00.000Z",
+      "submitComment": "订单PO-00983价税合计508695.44元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-01-28T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-01-28T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-01-28T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00994",
+      "businessType": "PO",
+      "businessId": "PO-00994",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-01-09T01:30:00.000Z",
+      "submitComment": "订单PO-00994价税合计715090.97元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-01-09T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-01-09T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-01-09T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-00997",
+      "businessType": "PO",
+      "businessId": "PO-00997",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-02-08T01:30:00.000Z",
+      "submitComment": "订单PO-00997价税合计674483.22元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-02-08T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-02-08T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-02-08T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01014",
+      "businessType": "PO",
+      "businessId": "PO-01014",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-02-08T01:30:00.000Z",
+      "submitComment": "订单PO-01014价税合计741378.01元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-02-08T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-02-08T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-02-08T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01027",
+      "businessType": "PO",
+      "businessId": "PO-01027",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-01-19T01:30:00.000Z",
+      "submitComment": "订单PO-01027价税合计537140.04元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-01-19T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-01-19T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-01-19T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01041",
+      "businessType": "PO",
+      "businessId": "PO-01041",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-02-05T01:30:00.000Z",
+      "submitComment": "订单PO-01041价税合计864696.10元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-02-05T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-02-05T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-02-05T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01051",
+      "businessType": "PO",
+      "businessId": "PO-01051",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-02-11T01:30:00.000Z",
+      "submitComment": "订单PO-01051价税合计562679.66元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-02-11T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-02-11T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-02-11T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01083",
+      "businessType": "PO",
+      "businessId": "PO-01083",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-02-23T01:30:00.000Z",
+      "submitComment": "订单PO-01083价税合计518641.97元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-02-23T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-02-23T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-02-23T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01088",
+      "businessType": "PO",
+      "businessId": "PO-01088",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-01-08T01:30:00.000Z",
+      "submitComment": "订单PO-01088价税合计620653.17元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-01-08T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-01-08T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-01-08T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01101",
+      "businessType": "PO",
+      "businessId": "PO-01101",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-01-01T01:30:00.000Z",
+      "submitComment": "订单PO-01101价税合计729005.92元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-01-01T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-01-01T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-01-01T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01146",
+      "businessType": "PO",
+      "businessId": "PO-01146",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-01-30T01:30:00.000Z",
+      "submitComment": "订单PO-01146价税合计1207770.63元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-01-30T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-01-30T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-01-30T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01179",
+      "businessType": "PO",
+      "businessId": "PO-01179",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-03-02T01:30:00.000Z",
+      "submitComment": "订单PO-01179价税合计1058613.31元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-03-02T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-03-02T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-03-02T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01191",
+      "businessType": "PO",
+      "businessId": "PO-01191",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-03-11T01:30:00.000Z",
+      "submitComment": "订单PO-01191价税合计560818.02元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-03-11T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-03-11T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-03-11T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01204",
+      "businessType": "PO",
+      "businessId": "PO-01204",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-02-20T01:30:00.000Z",
+      "submitComment": "订单PO-01204价税合计611408.51元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-02-20T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-02-20T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-02-20T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01228",
+      "businessType": "PO",
+      "businessId": "PO-01228",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-03-02T01:30:00.000Z",
+      "submitComment": "订单PO-01228价税合计1144942.32元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-03-02T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-03-02T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-03-02T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01247",
+      "businessType": "PO",
+      "businessId": "PO-01247",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-02-26T01:30:00.000Z",
+      "submitComment": "订单PO-01247价税合计734772.54元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-02-26T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-02-26T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-02-26T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01281",
+      "businessType": "PO",
+      "businessId": "PO-01281",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-03-01T01:30:00.000Z",
+      "submitComment": "订单PO-01281价税合计538795.08元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-03-01T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-03-01T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-03-01T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01293",
+      "businessType": "PO",
+      "businessId": "PO-01293",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-03-14T01:30:00.000Z",
+      "submitComment": "订单PO-01293价税合计697580.27元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-03-14T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-03-14T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-03-14T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01325",
+      "businessType": "PO",
+      "businessId": "PO-01325",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-03-13T01:30:00.000Z",
+      "submitComment": "订单PO-01325价税合计873585.92元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-03-13T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-03-13T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-03-13T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01341",
+      "businessType": "PO",
+      "businessId": "PO-01341",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-03-22T01:30:00.000Z",
+      "submitComment": "订单PO-01341价税合计587521.96元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-03-22T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-03-22T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-03-22T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01349",
+      "businessType": "PO",
+      "businessId": "PO-01349",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-04-05T01:30:00.000Z",
+      "submitComment": "订单PO-01349价税合计824871.40元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-04-05T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-04-05T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-04-05T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01379",
+      "businessType": "PO",
+      "businessId": "PO-01379",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-04-07T01:30:00.000Z",
+      "submitComment": "订单PO-01379价税合计597590.76元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-04-07T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-04-07T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-04-07T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01423",
+      "businessType": "PO",
+      "businessId": "PO-01423",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-03-23T01:30:00.000Z",
+      "submitComment": "订单PO-01423价税合计652325.77元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-03-23T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-03-23T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-03-23T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01458",
+      "businessType": "PO",
+      "businessId": "PO-01458",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-03-18T01:30:00.000Z",
+      "submitComment": "订单PO-01458价税合计793691.72元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-03-18T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-03-18T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-03-18T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01469",
+      "businessType": "PO",
+      "businessId": "PO-01469",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-04-06T01:30:00.000Z",
+      "submitComment": "订单PO-01469价税合计521273.05元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-04-06T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-04-06T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-04-06T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01484",
+      "businessType": "PO",
+      "businessId": "PO-01484",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-03-06T01:30:00.000Z",
+      "submitComment": "订单PO-01484价税合计1220571.44元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-03-06T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-03-06T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-03-06T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01520",
+      "businessType": "PO",
+      "businessId": "PO-01520",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-05-08T01:30:00.000Z",
+      "submitComment": "订单PO-01520价税合计696032.40元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-05-08T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-05-08T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-05-08T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01533",
+      "businessType": "PO",
+      "businessId": "PO-01533",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-04-23T01:30:00.000Z",
+      "submitComment": "订单PO-01533价税合计622102.86元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-04-23T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-04-23T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-04-23T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01539",
+      "businessType": "PO",
+      "businessId": "PO-01539",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-04-28T01:30:00.000Z",
+      "submitComment": "订单PO-01539价税合计997201.27元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-04-28T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-04-28T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-04-28T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01570",
+      "businessType": "PO",
+      "businessId": "PO-01570",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-04-26T01:30:00.000Z",
+      "submitComment": "订单PO-01570价税合计628917.71元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-04-26T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-04-26T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-04-26T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01573",
+      "businessType": "PO",
+      "businessId": "PO-01573",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-04-22T01:30:00.000Z",
+      "submitComment": "订单PO-01573价税合计651245.56元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-04-22T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-04-22T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-04-22T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01696",
+      "businessType": "PO",
+      "businessId": "PO-01696",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-06-01T01:30:00.000Z",
+      "submitComment": "订单PO-01696价税合计546552.64元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-06-01T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-06-01T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-06-01T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01776",
+      "businessType": "PO",
+      "businessId": "PO-01776",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-05-28T01:30:00.000Z",
+      "submitComment": "订单PO-01776价税合计661620.97元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-05-28T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-05-28T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-05-28T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01789",
+      "businessType": "PO",
+      "businessId": "PO-01789",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-06-08T01:30:00.000Z",
+      "submitComment": "订单PO-01789价税合计1191030.35元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-06-08T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-06-08T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-06-08T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01868",
+      "businessType": "PO",
+      "businessId": "PO-01868",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-06-23T01:30:00.000Z",
+      "submitComment": "订单PO-01868价税合计711957.25元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-06-23T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-06-23T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-06-23T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01895",
+      "businessType": "PO",
+      "businessId": "PO-01895",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-07-15T01:30:00.000Z",
+      "submitComment": "订单PO-01895价税合计1393463.17元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-07-15T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-07-15T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-07-15T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01914",
+      "businessType": "PO",
+      "businessId": "PO-01914",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-06-15T01:30:00.000Z",
+      "submitComment": "订单PO-01914价税合计941988.39元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-06-15T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-06-15T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-06-15T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01920",
+      "businessType": "PO",
+      "businessId": "PO-01920",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-07-16T01:30:00.000Z",
+      "submitComment": "订单PO-01920价税合计858065.08元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-07-16T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-07-16T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-07-16T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01935",
+      "businessType": "PO",
+      "businessId": "PO-01935",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-07-03T01:30:00.000Z",
+      "submitComment": "订单PO-01935价税合计681228.25元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-07-03T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-07-03T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-07-03T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01949",
+      "businessType": "PO",
+      "businessId": "PO-01949",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-07-03T01:30:00.000Z",
+      "submitComment": "订单PO-01949价税合计873978.60元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-07-03T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-07-03T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-07-03T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-01989",
+      "businessType": "PO",
+      "businessId": "PO-01989",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-07-14T01:30:00.000Z",
+      "submitComment": "订单PO-01989价税合计538538.13元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-07-14T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-07-14T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-07-14T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02002",
+      "businessType": "PO",
+      "businessId": "PO-02002",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-08-05T01:30:00.000Z",
+      "submitComment": "订单PO-02002价税合计746463.35元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-08-05T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-08-05T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-08-05T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02015",
+      "businessType": "PO",
+      "businessId": "PO-02015",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-08-14T01:30:00.000Z",
+      "submitComment": "订单PO-02015价税合计603693.86元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-08-14T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-08-14T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-08-14T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02031",
+      "businessType": "PO",
+      "businessId": "PO-02031",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-07-13T01:30:00.000Z",
+      "submitComment": "订单PO-02031价税合计1610045.64元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-07-13T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-07-13T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-07-13T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02035",
+      "businessType": "PO",
+      "businessId": "PO-02035",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-07-28T01:30:00.000Z",
+      "submitComment": "订单PO-02035价税合计590240.82元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-07-28T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-07-28T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-07-28T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02060",
+      "businessType": "PO",
+      "businessId": "PO-02060",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-08-02T01:30:00.000Z",
+      "submitComment": "订单PO-02060价税合计2620043.92元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-08-02T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-08-02T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-08-02T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02077",
+      "businessType": "PO",
+      "businessId": "PO-02077",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-07-28T01:30:00.000Z",
+      "submitComment": "订单PO-02077价税合计507935.13元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-07-28T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-07-28T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-07-28T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02128",
+      "businessType": "PO",
+      "businessId": "PO-02128",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-08-06T01:30:00.000Z",
+      "submitComment": "订单PO-02128价税合计582211.68元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-08-06T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-08-06T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-08-06T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02147",
+      "businessType": "PO",
+      "businessId": "PO-02147",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-08-13T01:30:00.000Z",
+      "submitComment": "订单PO-02147价税合计581687.94元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-08-13T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-08-13T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-08-13T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02163",
+      "businessType": "PO",
+      "businessId": "PO-02163",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-08-17T01:30:00.000Z",
+      "submitComment": "订单PO-02163价税合计928515.22元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-08-17T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-08-17T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-08-17T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02215",
+      "businessType": "PO",
+      "businessId": "PO-02215",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-09-10T01:30:00.000Z",
+      "submitComment": "订单PO-02215价税合计639516.86元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-09-10T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-09-10T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-09-10T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02235",
+      "businessType": "PO",
+      "businessId": "PO-02235",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-09-04T01:30:00.000Z",
+      "submitComment": "订单PO-02235价税合计1814689.06元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-09-04T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-09-04T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-09-04T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02262",
+      "businessType": "PO",
+      "businessId": "PO-02262",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-08-30T01:30:00.000Z",
+      "submitComment": "订单PO-02262价税合计670183.33元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-08-30T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-08-30T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-08-30T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02318",
+      "businessType": "PO",
+      "businessId": "PO-02318",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-10-05T01:30:00.000Z",
+      "submitComment": "订单PO-02318价税合计538664.16元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-10-05T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-10-05T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-10-05T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02386",
+      "businessType": "PO",
+      "businessId": "PO-02386",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-10-14T01:30:00.000Z",
+      "submitComment": "订单PO-02386价税合计507937.41元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-10-14T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-10-14T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-10-14T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02390",
+      "businessType": "PO",
+      "businessId": "PO-02390",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-09-27T01:30:00.000Z",
+      "submitComment": "订单PO-02390价税合计500330.90元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-09-27T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-09-27T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-09-27T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02403",
+      "businessType": "PO",
+      "businessId": "PO-02403",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-09-14T01:30:00.000Z",
+      "submitComment": "订单PO-02403价税合计1569895.07元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-09-14T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-09-14T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-09-14T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02408",
+      "businessType": "PO",
+      "businessId": "PO-02408",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-09-16T01:30:00.000Z",
+      "submitComment": "订单PO-02408价税合计508923.08元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-09-16T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-09-16T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-09-16T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02416",
+      "businessType": "PO",
+      "businessId": "PO-02416",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-10-10T01:30:00.000Z",
+      "submitComment": "订单PO-02416价税合计948546.92元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-10-10T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-10-10T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-10-10T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02472",
+      "businessType": "PO",
+      "businessId": "PO-02472",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-10-13T01:30:00.000Z",
+      "submitComment": "订单PO-02472价税合计1740015.08元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-10-13T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-10-13T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-10-13T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02476",
+      "businessType": "PO",
+      "businessId": "PO-02476",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-11-17T01:30:00.000Z",
+      "submitComment": "订单PO-02476价税合计530194.61元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-11-17T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-11-17T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-11-17T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02479",
+      "businessType": "PO",
+      "businessId": "PO-02479",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-11-27T01:30:00.000Z",
+      "submitComment": "订单PO-02479价税合计546184.39元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-11-27T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-11-27T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-11-27T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02493",
+      "businessType": "PO",
+      "businessId": "PO-02493",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-10-14T01:30:00.000Z",
+      "submitComment": "订单PO-02493价税合计668388.40元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-10-14T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-10-14T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-10-14T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02496",
+      "businessType": "PO",
+      "businessId": "PO-02496",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-11-11T01:30:00.000Z",
+      "submitComment": "订单PO-02496价税合计1759534.22元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-11-11T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-11-11T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-11-11T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02525",
+      "businessType": "PO",
+      "businessId": "PO-02525",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-10-17T01:30:00.000Z",
+      "submitComment": "订单PO-02525价税合计645131.54元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-10-17T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-10-17T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-10-17T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02590",
+      "businessType": "PO",
+      "businessId": "PO-02590",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-11-04T01:30:00.000Z",
+      "submitComment": "订单PO-02590价税合计693608.04元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-11-04T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-11-04T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-11-04T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02630",
+      "businessType": "PO",
+      "businessId": "PO-02630",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-10-25T01:30:00.000Z",
+      "submitComment": "订单PO-02630价税合计1259466.86元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-10-25T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-10-25T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-10-25T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02634",
+      "businessType": "PO",
+      "businessId": "PO-02634",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-11-24T01:30:00.000Z",
+      "submitComment": "订单PO-02634价税合计536570.29元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-11-24T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-11-24T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-11-24T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02660",
+      "businessType": "PO",
+      "businessId": "PO-02660",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-11-25T01:30:00.000Z",
+      "submitComment": "订单PO-02660价税合计1282689.47元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-11-25T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-11-25T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-11-25T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02678",
+      "businessType": "PO",
+      "businessId": "PO-02678",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-12-12T01:30:00.000Z",
+      "submitComment": "订单PO-02678价税合计750712.94元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-12-12T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-12-12T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-12-12T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02731",
+      "businessType": "PO",
+      "businessId": "PO-02731",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-11-30T01:30:00.000Z",
+      "submitComment": "订单PO-02731价税合计738296.78元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-11-30T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-11-30T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-11-30T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02862",
+      "businessType": "PO",
+      "businessId": "PO-02862",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-01-08T01:30:00.000Z",
+      "submitComment": "订单PO-02862价税合计612408.00元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-01-08T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-01-08T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-01-08T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02893",
+      "businessType": "PO",
+      "businessId": "PO-02893",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-12-29T01:30:00.000Z",
+      "submitComment": "订单PO-02893价税合计509545.82元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-12-29T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-12-29T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-12-29T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02914",
+      "businessType": "PO",
+      "businessId": "PO-02914",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-01-12T01:30:00.000Z",
+      "submitComment": "订单PO-02914价税合计564680.89元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-01-12T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-01-12T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-01-12T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02921",
+      "businessType": "PO",
+      "businessId": "PO-02921",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2025-12-12T01:30:00.000Z",
+      "submitComment": "订单PO-02921价税合计643967.98元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2025-12-12T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2025-12-12T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2025-12-12T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02944",
+      "businessType": "PO",
+      "businessId": "PO-02944",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-01-07T01:30:00.000Z",
+      "submitComment": "订单PO-02944价税合计677277.03元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-01-07T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-01-07T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-01-07T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02974",
+      "businessType": "PO",
+      "businessId": "PO-02974",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-02-14T01:30:00.000Z",
+      "submitComment": "订单PO-02974价税合计513031.22元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-02-14T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-02-14T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-02-14T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-02994",
+      "businessType": "PO",
+      "businessId": "PO-02994",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-01-27T01:30:00.000Z",
+      "submitComment": "订单PO-02994价税合计912597.15元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-01-27T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-01-27T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-01-27T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03026",
+      "businessType": "PO",
+      "businessId": "PO-03026",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-02-16T01:30:00.000Z",
+      "submitComment": "订单PO-03026价税合计651368.84元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-02-16T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-02-16T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-02-16T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03036",
+      "businessType": "PO",
+      "businessId": "PO-03036",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-01-09T01:30:00.000Z",
+      "submitComment": "订单PO-03036价税合计604281.18元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-01-09T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-01-09T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-01-09T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03061",
+      "businessType": "PO",
+      "businessId": "PO-03061",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-02-08T01:30:00.000Z",
+      "submitComment": "订单PO-03061价税合计703115.52元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-02-08T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-02-08T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-02-08T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03101",
+      "businessType": "PO",
+      "businessId": "PO-03101",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-01-23T01:30:00.000Z",
+      "submitComment": "订单PO-03101价税合计544307.44元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-01-23T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-01-23T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-01-23T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03104",
+      "businessType": "PO",
+      "businessId": "PO-03104",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-01-04T01:30:00.000Z",
+      "submitComment": "订单PO-03104价税合计711946.24元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-01-04T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-01-04T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-01-04T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03115",
+      "businessType": "PO",
+      "businessId": "PO-03115",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-02-01T01:30:00.000Z",
+      "submitComment": "订单PO-03115价税合计940712.42元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-02-01T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-02-01T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-02-01T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03127",
+      "businessType": "PO",
+      "businessId": "PO-03127",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-01-31T01:30:00.000Z",
+      "submitComment": "订单PO-03127价税合计757786.08元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-01-31T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-01-31T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-01-31T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03138",
+      "businessType": "PO",
+      "businessId": "PO-03138",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-03-01T01:30:00.000Z",
+      "submitComment": "订单PO-03138价税合计1042747.13元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-03-01T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-03-01T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-03-01T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03180",
+      "businessType": "PO",
+      "businessId": "PO-03180",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-02-26T01:30:00.000Z",
+      "submitComment": "订单PO-03180价税合计1042819.99元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-02-26T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-02-26T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-02-26T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03222",
+      "businessType": "PO",
+      "businessId": "PO-03222",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-03-09T01:30:00.000Z",
+      "submitComment": "订单PO-03222价税合计553394.95元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-03-09T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-03-09T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-03-09T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03281",
+      "businessType": "PO",
+      "businessId": "PO-03281",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-03-05T01:30:00.000Z",
+      "submitComment": "订单PO-03281价税合计577982.99元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-03-05T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-03-05T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-03-05T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03342",
+      "businessType": "PO",
+      "businessId": "PO-03342",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-03-25T01:30:00.000Z",
+      "submitComment": "订单PO-03342价税合计548455.34元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-03-25T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-03-25T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-03-25T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03370",
+      "businessType": "PO",
+      "businessId": "PO-03370",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-03-30T01:30:00.000Z",
+      "submitComment": "订单PO-03370价税合计604516.90元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-03-30T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-03-30T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-03-30T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03399",
+      "businessType": "PO",
+      "businessId": "PO-03399",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-03-08T01:30:00.000Z",
+      "submitComment": "订单PO-03399价税合计713344.41元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-03-08T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-03-08T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-03-08T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03402",
+      "businessType": "PO",
+      "businessId": "PO-03402",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-04-13T01:30:00.000Z",
+      "submitComment": "订单PO-03402价税合计982452.04元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-04-13T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-04-13T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-04-13T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03466",
+      "businessType": "PO",
+      "businessId": "PO-03466",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-03-23T01:30:00.000Z",
+      "submitComment": "订单PO-03466价税合计1191860.92元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-03-23T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-03-23T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-03-23T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03470",
+      "businessType": "PO",
+      "businessId": "PO-03470",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-04-11T01:30:00.000Z",
+      "submitComment": "订单PO-03470价税合计1063230.64元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-04-11T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-04-11T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-04-11T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03477",
+      "businessType": "PO",
+      "businessId": "PO-03477",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-03-12T01:30:00.000Z",
+      "submitComment": "订单PO-03477价税合计511318.84元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-03-12T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-03-12T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-03-12T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03501",
+      "businessType": "PO",
+      "businessId": "PO-03501",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-05-16T01:30:00.000Z",
+      "submitComment": "订单PO-03501价税合计537244.29元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-05-16T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-05-16T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-05-16T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03546",
+      "businessType": "PO",
+      "businessId": "PO-03546",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-05-12T01:30:00.000Z",
+      "submitComment": "订单PO-03546价税合计502384.20元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-05-12T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-05-12T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-05-12T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03558",
+      "businessType": "PO",
+      "businessId": "PO-03558",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-04-02T01:30:00.000Z",
+      "submitComment": "订单PO-03558价税合计618936.40元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-04-02T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-04-02T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-04-02T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03566",
+      "businessType": "PO",
+      "businessId": "PO-03566",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-05-06T01:30:00.000Z",
+      "submitComment": "订单PO-03566价税合计528412.60元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-05-06T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-05-06T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-05-06T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03595",
+      "businessType": "PO",
+      "businessId": "PO-03595",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-04-18T01:30:00.000Z",
+      "submitComment": "订单PO-03595价税合计1610609.34元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-04-18T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-04-18T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-04-18T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03757",
+      "businessType": "PO",
+      "businessId": "PO-03757",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-05-24T01:30:00.000Z",
+      "submitComment": "订单PO-03757价税合计1385136.31元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-05-24T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-05-24T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-05-24T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03793",
+      "businessType": "PO",
+      "businessId": "PO-03793",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-05-23T01:30:00.000Z",
+      "submitComment": "订单PO-03793价税合计522004.33元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-05-23T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-05-23T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-05-23T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03807",
+      "businessType": "PO",
+      "businessId": "PO-03807",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-05-29T01:30:00.000Z",
+      "submitComment": "订单PO-03807价税合计1134802.02元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-05-29T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-05-29T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-05-29T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03816",
+      "businessType": "PO",
+      "businessId": "PO-03816",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-05-18T01:30:00.000Z",
+      "submitComment": "订单PO-03816价税合计1071374.28元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-05-18T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-05-18T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-05-18T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03822",
+      "businessType": "PO",
+      "businessId": "PO-03822",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-05-29T01:30:00.000Z",
+      "submitComment": "订单PO-03822价税合计618889.72元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-05-29T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-05-29T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-05-29T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    },
+    {
+      "approvalId": "APP-PO-LARGE-PO-03907",
+      "businessType": "PO",
+      "businessId": "PO-03907",
+      "workflowTitle": "大额采购审批流程",
+      "initiator": "EMP-3392",
+      "initiatorId": "EMP-3392",
+      "initiatorName": "郑凯",
+      "submittedAt": "2026-06-17T01:30:00.000Z",
+      "submitComment": "订单PO-03907价税合计1037088.22元，达到大额采购审批红线，申请加签。",
+      "nodes": [
+        {
+          "step": 1,
+          "nodeName": "部门经理审批",
+          "approverId": "EMP-1002",
+          "approverName": "王经理",
+          "action": "APPROVE",
+          "comment": "业务需求属实，同意上报。",
+          "approvalTime": "2026-06-17T04:00:00.000Z"
+        },
+        {
+          "step": 2,
+          "nodeName": "采购总监审批",
+          "approverId": "EMP-PROC-02",
+          "approverName": "陈芳",
+          "action": "APPROVE",
+          "comment": "供应商与价格复核通过。",
+          "approvalTime": "2026-06-17T07:00:00.000Z"
+        },
+        {
+          "step": 3,
+          "nodeName": "财务总监审批",
+          "approverId": "EMP-1088",
+          "approverName": "李总监",
+          "action": "APPROVE",
+          "comment": "达到大额红线，审批通过，允许下达采购订单。",
+          "approvalTime": "2026-06-17T22:00:00.000Z"
+        }
+      ],
+      "approvalStatus": "COMPLETED"
+    }
+  ]
+}

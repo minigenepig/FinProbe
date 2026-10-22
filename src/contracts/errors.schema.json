@@ -1,0 +1,31 @@
+{
+  "$id": "https://finprobe.local/contracts/errors.schema.json",
+  "title": "FinprobeError",
+  "type": "object",
+  "required": ["ok", "error"],
+  "additionalProperties": true,
+  "properties": {
+    "ok": { "const": false },
+    "error": {
+      "type": "object",
+      "required": ["code", "message", "retryable"],
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string",
+          "enum": [
+            "VALIDATION",
+            "NOT_FOUND",
+            "CONFLICT",
+            "ERP_UNAVAILABLE",
+            "LLM_ERROR",
+            "EVIDENCE_BLOCKED",
+            "CANCELLED"
+          ]
+        },
+        "message": { "type": "string" },
+        "retryable": { "type": "boolean" }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+httpx>=0.27.0
+fastapi>=0.115.0
+uvicorn>=0.32.0
+pydantic>=2.9.0
+pytest>=8.0.0
+# optional: pip install mcp for FastMCP; stdlib JSON-RPC is the fallback.
